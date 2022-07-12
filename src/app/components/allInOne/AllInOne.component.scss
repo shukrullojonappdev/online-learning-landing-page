@@ -1,0 +1,98 @@
+@import "../../../assets/variables";
+@import "../../App.scss";
+
+.all-in-one {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 100px;
+
+  span {
+    color: $darkBlue;
+  }
+
+  h3 {
+    color: $orange;
+  }
+
+  p {
+    margin-top: 10px;
+    max-width: 800px;
+    font-size: 1rem;
+    color: $grey;
+    margin-bottom: 100px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    min-width: 250px;
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+    border-radius: 20px;
+    padding: 0 20px;
+    margin: 20px 20px 40px 20px;
+
+    &:first-child {
+      .icon {
+        background: #5b72ee;
+      }
+    }
+    &:nth-child(2) {
+      .icon {
+        background: $orange;
+      }
+    }
+    &:last-child {
+      .icon {
+        background: $cyan;
+      }
+    }
+
+    .icon {
+      transform: translateY(-25px);
+      padding: 10px;
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin-top: 20px;
+
+      h5 {
+        display: flex;
+        align-items: center;
+        height: 50px;
+        font-weight: 500;
+        color: $darkBlue;
+        font-size: 1.2rem;
+      }
+      p {
+        padding-top: 10px;
+        font-size: 0.85rem;
+        color: $grey;
+      }
+    }
+  }
+}
