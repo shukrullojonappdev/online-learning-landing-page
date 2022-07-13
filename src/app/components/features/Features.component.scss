@@ -29,6 +29,12 @@
     min-width: 200px;
     border-radius: 30px;
     margin-bottom: 50px;
+    cursor: pointer;
+    transition-duration: 300ms;
+
+    &:hover {
+      box-shadow: 0 0 5px $orange;
+    }
   }
 
   .row {

@@ -69,6 +69,11 @@
       border-radius: 30px;
       cursor: pointer;
       margin-bottom: 30px;
+      transition-duration: 300ms;
+
+      &:hover {
+        box-shadow: 0 0 5px $orange;
+      }
     }
   }
 }

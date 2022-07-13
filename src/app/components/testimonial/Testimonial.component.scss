@@ -59,17 +59,30 @@
     }
 
     button {
-      width: 250px;
-      min-width: 250px;
+      width: 40px;
+      min-width: 40px;
       height: 40px;
       background: #00000000;
-      color: $orange;
+      color: #00000000;
       border: 1px solid $orange;
       border-radius: 30px;
-      padding-right: 50px;
       position: relative;
       cursor: pointer;
       margin-bottom: 30px;
+      transition-duration: 300ms;
+      text-indent: -1000px;
+      transition-duration: 300ms;
+
+      &:hover {
+        box-shadow: 0 0 5px $orange;
+      }
+
+      &:hover {
+        width: 250px;
+        padding-right: 50px;
+        text-indent: 1px;
+        color: $orange;
+      }
 
       div {
         position: absolute;
@@ -81,6 +94,7 @@
         justify-content: center;
         align-items: center;
         border: 1px solid $orange;
+        color: $orange;
         border-radius: 30px;
       }
     }

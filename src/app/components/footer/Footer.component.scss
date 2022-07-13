@@ -78,6 +78,11 @@
       border-radius: 30px;
       border: 0;
       cursor: pointer;
+      transition-duration: 300ms;
+
+      &:hover {
+        box-shadow: 0 0 10px #393fcf;
+      }
     }
   }
 }
