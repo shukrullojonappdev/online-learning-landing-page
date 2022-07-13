@@ -11,11 +11,13 @@
   h4 {
     color: $darkBlue;
     margin-bottom: 10px;
+    text-align: center;
   }
   p {
     color: $grey;
     font-size: 1rem;
     margin-bottom: 60px;
+    text-align: center;
   }
 
   .img {
@@ -34,10 +36,30 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 1000px) {
+      text-align: center;
+    }
+
     .box {
       width: calc(50% - 40px);
       margin-right: 40px;
       padding-bottom: 30px;
+
+      .content {
+        margin-top: 10px;
+
+        p {
+          text-align: left;
+        }
+
+        @media (max-width: 1000px) {
+          text-align: center;
+
+          p {
+            text-align: center;
+          }
+        }
+      }
 
       div {
         a {
@@ -137,11 +159,26 @@
         margin: 0;
         padding: 0;
 
+        @media (max-width: 1000px) {
+          h6 {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+
         @media (max-width: 500px) {
           flex-direction: column;
           text-align: center;
           justify-content: center;
           align-items: center;
+          h6 {
+            text-align: center;
+          }
+          p {
+            text-align: center;
+          }
         }
 
         img {

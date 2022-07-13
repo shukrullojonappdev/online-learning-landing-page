@@ -84,6 +84,11 @@
         display: flex;
         align-items: center;
 
+        @media (max-width: 1000px) {
+          justify-content: center;
+          align-items: center;
+        }
+
         img {
           width: 70px;
           height: 70px;
