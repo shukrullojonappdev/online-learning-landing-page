@@ -22,3 +22,16 @@ a:active {
 .hide {
   overflow: hidden;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $orange;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff2e1;
+}
