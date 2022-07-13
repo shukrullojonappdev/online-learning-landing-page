@@ -1,0 +1,74 @@
+@import "../../App.scss";
+@import "../../../assets/variables";
+
+.integrations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+
+  img {
+    width: calc(50% - 50px);
+    margin-right: 50px;
+
+    @media (max-width: 1000px) {
+      width: 50%;
+      margin: 0;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .box {
+    width: 50%;
+    border-top: 1px solid $black;
+    position: relative;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
+    .label {
+      position: relative;
+      top: -10px;
+      font-size: 0.7rem;
+      width: calc(100% - 40px);
+      padding-left: 20px;
+      margin-left: 40px;
+      background: #fff;
+    }
+
+    h4 {
+      color: $darkBlue;
+      margin-bottom: 30px;
+    }
+
+    span {
+      color: $orange;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $grey;
+      margin-bottom: 40px;
+    }
+
+    button {
+      width: 200px;
+      min-width: 200px;
+      height: 40px;
+      background: #00000000;
+      color: $orange;
+      border: 1px solid $orange;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-bottom: 30px;
+    }
+  }
+}

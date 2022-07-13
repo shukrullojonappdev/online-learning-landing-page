@@ -1,0 +1,88 @@
+@import "../../App.scss";
+@import "../../../assets/variables";
+
+.testimonial {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
+
+  img {
+    width: calc(50% - 50px);
+    margin-left: 50px;
+    z-index: 8;
+
+    @media (max-width: 1000px) {
+      width: 50%;
+      margin: 0;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .box {
+    width: 50%;
+    border-top: 1px solid $black;
+    position: relative;
+
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
+    .label {
+      position: relative;
+      top: -10px;
+      font-size: 0.7rem;
+      width: calc(100% - 40px);
+      padding-left: 20px;
+      margin-left: 40px;
+      background: #fff;
+    }
+
+    h2 {
+      color: $darkBlue;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $grey;
+      margin-bottom: 30px;
+    }
+
+    button {
+      width: 250px;
+      min-width: 250px;
+      height: 40px;
+      background: #00000000;
+      color: $orange;
+      border: 1px solid $orange;
+      border-radius: 30px;
+      padding-right: 50px;
+      position: relative;
+      cursor: pointer;
+      margin-bottom: 30px;
+
+      div {
+        position: absolute;
+        top: -1px;
+        right: -1px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $orange;
+        border-radius: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../App.scss";
+@import "../../../assets/variables";
+
+.news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+
+  h4 {
+    color: $darkBlue;
+    margin-bottom: 10px;
+  }
+  p {
+    color: $grey;
+    font-size: 1rem;
+    margin-bottom: 60px;
+  }
+
+  .img {
+    position: relative;
+    margin-right: 10px;
+    max-width: 200px;
+
+    span {
+      position: absolute;
+      bottom: 20px;
+      left: 10px;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+
+    .box {
+      width: calc(50% - 40px);
+      margin-right: 40px;
+      padding-bottom: 30px;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        margin: 0;
+      }
+    }
+
+    a {
+      font-size: 0.9rem;
+      text-decoration: underline;
+      color: $grey;
+    }
+
+    img {
+      width: 100%;
+      min-width: 250px;
+    }
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      color: $black;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    h6 {
+      color: $black;
+      margin-bottom: 10px;
+    }
+
+    span {
+      padding: 5px 10px;
+      background: $orange;
+      border-radius: 30px;
+      font-size: 0.8rem;
+    }
+
+    .boxes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 50%;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      .box {
+        display: flex;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        @media (max-width: 500px) {
+          flex-direction: column;
+        }
+
+        img {
+          flex: 2;
+          width: 100%;
+          min-width: 100px;
+          margin-right: 10px;
+        }
+
+        .content {
+          flex: 5;
+        }
+      }
+
+      span {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

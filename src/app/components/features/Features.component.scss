@@ -1,0 +1,87 @@
+@import "../../App.scss";
+@import "../../../assets/variables";
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+  h3 {
+    color: $darkBlue;
+    margin-bottom: 10px;
+    span {
+      color: $orange;
+    }
+  }
+  p {
+    font-size: 1rem;
+    color: $grey;
+  }
+
+  button {
+    background: #00000000;
+    border: 1px solid $orange;
+    color: orange;
+    width: 200px;
+    height: 40px;
+    min-width: 200px;
+    border-radius: 30px;
+    margin-bottom: 50px;
+  }
+
+  .row {
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }
+
+    &:nth-child(2) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    &:nth-child(4) {
+      flex-direction: row-reverse;
+
+      @media (max-width: 1000px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    img {
+      width: 50%;
+
+      @media (max-width: 1000px) {
+        width: 80%;
+      }
+    }
+
+    .content {
+      width: 50%;
+      margin-bottom: 10px;
+
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+
+      .list {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
