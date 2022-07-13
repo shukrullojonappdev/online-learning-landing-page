@@ -64,6 +64,8 @@
       border: 1px solid white;
       padding-left: 20px;
       color: $grey;
+      outline: none;
+      color: white;
 
       @media (max-width: 500px) {
         margin-bottom: 20px;
@@ -79,6 +81,7 @@
       border: 0;
       cursor: pointer;
       transition-duration: 300ms;
+      color: white;
 
       &:hover {
         box-shadow: 0 0 10px #393fcf;

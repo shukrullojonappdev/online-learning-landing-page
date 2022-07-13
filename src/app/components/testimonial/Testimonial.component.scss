@@ -10,6 +10,7 @@
 
   @media (max-width: 1000px) {
     flex-direction: column-reverse;
+    text-align: center;
   }
 
   .carousel {
@@ -124,6 +125,7 @@
       padding-left: 20px;
       margin-left: 40px;
       background: #fff;
+      text-align: left;
     }
 
     h2 {

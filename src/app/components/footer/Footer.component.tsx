@@ -13,7 +13,7 @@ const Footer = () => {
             <input placeholder="Your email" type="text" />
             <button>Subscribe</button>
           </div>
-          <div className="row">
+          <div className="row" style={{ marginBottom: 30 }}>
             <span>Careers</span>
             <span>Privacy Policy</span>
             <span>Terms & Conditions</span>
